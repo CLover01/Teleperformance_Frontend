@@ -1,0 +1,94 @@
+<h1>Service Registration</h1>
+
+<div>
+  <div id="continue-panel">
+    <p>Provide a service identification Id and identify if it can be registered. (900674336, 811033098 are valid. 900674335 is invalid.)</p>
+    <hr />
+    <input id="txtId"
+           type="number"
+           pattern="[0-9]*"
+           placeholder="Enter the Id" />
+    <table>
+      <tr>
+        <td>
+          <button class="btn continue-button" (click)="ValidateId()">Continue ></button>
+        </td>
+        <td>
+          <button id="btnRegistration" class="btn registration-button" onclick="window.location.reload();">< Register</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div id="details-panel" hidden="hidden">
+    <p>Data of the legal person requesting the virtual paperwork service:</p>
+    <hr />
+    <div class="textblock">
+      <p class="text">Company details information.</p>
+      <p class="text">You can edit or update the info.</p>
+    </div>
+    <form class="container">
+      <div>
+        <label for="idtype">Identification Type: *</label>
+        <br />
+        <select name="idtype" id="idtype" class="select-type">
+          <option value="NIT">NIT</option>
+          <option value="Non NIT">Non NIT</option>
+          <option value="Foreign Id">Foreign Id</option>
+          <option value="Non Foreign Id">Non Foreign Id</option>
+        </select>
+      </div>
+      <div>
+        <label for="idnumber">Identification Number: *</label>
+        <br />
+        <input id="idnumber" type="number" disabled />
+      </div>
+      <div>
+        <label for="idname">Company Name: *</label>
+        <br />
+        <input id="idname" type="text" disabled />
+      </div>
+      <div>
+        <label>First Contact: </label>
+        <br />
+        <input id="idfirstname" type="text" class="name" placeholder="First Name" />
+        <input id="idfirstlastname" type="text" class="name" placeholder="Second Name" />
+      </div>
+      <div>
+        <label>Second Contact: </label>
+        <br />
+        <input id="idsecondname" type="text" class="name" placeholder="First Name" />
+        <input id="idsecondlastname" type="text" class="name" placeholder="Second Name" />
+      </div>
+      <div>
+        <label for="idemail">Email: *</label>
+        <br />
+        <input id="idemail" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+      </div>
+      <div>
+        <label for="idaddress">Address: *</label>
+        <br />
+        <input id="idaddress" type="text" />
+      </div>
+      <div>
+        <label for="idmuniaddress">Municipality Of the Address: *</label>
+        <br />
+        <input id="idmuniaddress" type="text" />
+      </div>
+      <div>
+        <label for="idphone">Cell Phone: *</label>
+        <br />
+        <input id="idphone" type="text" />
+      </div>
+    </form>
+    <table>
+      <tr>
+        <td>
+          <button class="btn continue-button" (click)="Post()">Continue ></button>
+        </td>
+        <td>
+          <button id="btnRegistration" class="btn registration-button" onclick="window.location.reload();">< Register</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
