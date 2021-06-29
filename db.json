@@ -1,0 +1,56 @@
+{
+  "identifications": [
+    {
+      "id": 900674336
+    },
+    {
+      "id": 811033098
+    }
+  ],
+  "identificationtypes": [
+    {
+      "id": 1,
+      "type": "NIT"
+    },
+    {
+      "id": 2,
+      "type": "Non NIT"
+    },
+    {
+      "id": 3,
+      "type": "foreign id"
+    },
+    {
+      "id": 4,
+      "type": "Non foreign id"
+    }
+  ],
+  "companies": [
+    {
+      "id": 900674336,
+      "type": "Non NIT",
+      "name": "TelePerformance",
+      "firstname": "Justin",
+      "firstlastname": "Shi",
+      "secondname": "Arwen",
+      "secondlastname": "Shi",
+      "email": "jfyjuns@gmail.com",
+      "address": "Zhuhai, Guangdong",
+      "municipalityaddress": "Xiangzhou, Zhuhai, Guangdong",
+      "phone": "+867568217721"
+    },
+    {
+      "id": 811033098,
+      "type": "Non NIT",
+      "name": "Virtual Company",
+      "firstname": "Justin",
+      "secondname": "Arwen",
+      "firstlastname": "Shi",
+      "secondlastname": "Shi",
+      "email": "jfyjun@126.com",
+      "address": "Zhuhai, Guangdong",
+      "municipalityaddress": "Xiangzhou, Zhuhai, Guangdong",
+      "phone": "+86 0756 2876345"
+    }
+  ]
+}
